@@ -9,11 +9,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/', function (req, res) {
-  console.log(req.body);
-  const moves = ['F', 'T', 'L', 'R'];
-  
-  // TODO add your implementation here to replace the random response
-  
+  const moves = ['F', 'T', 'L', 'R', 'T', 'T', 'T', 'T', 'T','T','T','F', 'T', 'L', 'R','T','T','T','T','T','T', 'T', 'T', 'T', 'T', 'T', 'T', 'T', 'T', 'T', 'T', 'T', 'T', 'T', 'L', 'R', 'T'];
   res.send(moves[Math.floor(Math.random() * moves.length)]);
 });
 
